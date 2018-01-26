@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/mailegou.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+	</head>
+	<body>
+<!--header-->
+    <div class="headerwrap">
+    	<div class="loading"></div>
+    	<section class="top_mian">  		
+	    	<div class="site_top">
+	    		<article>    			
+		    		<div class="ltop left">
+		    			<p class="left">
+		    				<span>
+		    					<a href="">
+		    					   <img src="img/top1.jpg" alt="" />
+		    						麦乐购首页
+		    					</a>
+		    				</span>
+		    				<span>请登录</span>
+		    				<span class="active"><a href="html/register.html">免费注册</a></span>
+		    			</p>
+		    			<p class="left login">
+		    				<span class="left">其他登录方式：</span>
+		    				<a href=""><img src="img/top2.jpg" alt="" /></a>
+		    				<a href=""><img src="img/top3.jpg" alt="" /></a>
+		    				<a href=""><img src="img/top4.jpg" alt="" /></a>
+		    				<a href=""><img class="last" src="img/top5.jpg" alt="" /></a>
+		    			</p>
+		    			<p class="left phone">
+		    				联系客服：400-666-6600
+		    			</p>
+		    		</div>
+		    		<div class="rtop right">
+		    			<span class="my">
+		    				<a href="" class="m_buy">我的麦乐购</a>
+		    				<ol class="m_list">
+		    					<li>我的麦乐购</li>
+		    					<li>我的订单</li>
+		    					<li>我的账户</li>
+		    					<li>麦豆兑换</li>
+		    					<li>我的优惠券</li>
+		    					<li>我的搜藏</li>
+		    				</ol>
+		    			</span>
+		    			<span class="save"><img src="img/top6.jpg" alt="" /><a href="">收藏麦乐购</a></span>
+		    			<span class="plan"><a href="">妈妈推广计划</a></span>
+		    			<span class="_phone"><img src="img/top7.jpg" alt="" /><a href="">手机麦乐购</a></span>
+		    		</div>
+	    		</article>
+	    	</div>
+	    	<div class="head_top">
+	    		<article>
+	    			<div class="search_ind left">
+	    				<img class="left" src="img/nav_logo.jpg" alt="" />
+	    				<div class="s left">
+	    					<input class="txt left" type="text" name="" id="" value="请输入商品名称，支持拼音搜索" />
+	    					<input class="sub left" type="submit" name="" id="" value="搜索" />
+	    					<div class="keyword">
+	    						<a href="" class="first">热门关键词：</a>
+	    						<a href="" class="color">小安素</a>
+	    						<a href="" class="color">防晒</a>
+	    						<a href="">牛栏</a>
+	    						<a href="">花王</a>
+	    						<a href="">美素</a>
+	    						<a href="">爱他美</a>
+	    						<a href="">karicare</a>
+	    						<a href="">喜宝</a>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="top_ad right">
+	    				<a href=""><img src="img/nav_ad.jpg" alt="" /></a>
+	    			</div>
+	    		</article>
+	    	</div>
+	    		
+    	</section>
+    	<div class="nav_ind">
+    		<article>
+    			<p class="p_list left">
+    				全部商品分类
+    			</p>
+    			<div class="p_nav left">
+    				<i></i>    									
+	    				<span class="n_color">首页</span>
+	    				<span>进口奶粉</span>
+	    				<span>发现好货</span>
+	    				<span>整点抢</span>
+	    				<span>天天特卖</span>
+	    				<span>正品保证</span>
+	    				<span>海外直邮</span>
+	    				<span>国家馆</span>   				
+    			</div>
+    			<a href="" class="cart right"><i>去购物车结算</i></a>
+    		</article>
+    	</div>
+    </div>
+<!--nav-->
+    <div class="navwrap">
+    	<section>
+    		<div class="nav_main">
+    			<div class="column_main left">
+	    			<ul class="column">
+	    				<li>
+	    					<img class="c_fir" src="img/milk.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">宝宝奶粉</a></span>
+	    						<span><a>牛奶粉</a><a>羊奶粉</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/meal.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">宝宝辅食</a></span>
+	    						<span><a>米粉</a><a>宝宝零食</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/health.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">营养保健</a></span>
+	    						<span><a>宝宝营养</a><a>成人保养</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/baby.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">宝宝用品</a></span>
+	    						<span><a>纸尿裤</a><a>喂养</a><a>洗护</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/clothes.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">宝宝服饰</a></span>
+	    						<span><a>幼婴服饰</a><a>童装</a><a>童鞋</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/toy.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">宝宝玩具</a></span>
+	    						<span><a>幼婴玩具</a><a>遥控/电动</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img class="c_sev" src="img/mom.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">孕产妇产品</a></span>
+	    						<span><a>孕妈营养</a><a>产前产后</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column">
+	    				<li>
+	    					<img src="img/makeup.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">个护化妆</a></span>
+	    						<span><a>夏季防晒</a><a>面部护肤</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+	    			<ul class="column last">
+	    				<li>
+	    					<img src="img/live.jpg" alt="" />
+	    					<article>
+	    						<span><a href="">居家生活</a></span>
+	    						<span><a>食品饮料</a><a>生活日用</a></span>
+	    					</article>
+	    				</li>
+	    			</ul>
+    		    </div>
+	    		<div class="nav_center left">
+	    			<ul class="nav_img">
+	    				<li style="z-index: 5;"><a href="" class="n_fir"></a></li>
+	    				<li style="z-index: 4;"><a href="" class="n_sec"></a></li>
+	    				<li style="z-index: 3;"><a href="" class="n_thi"></a></li>
+	    				<li style="z-index: 6;"><a href="" class="n_for"></a></li>
+	    				<li style="z-index: 1;"><a href="" class="n_fiv"></a></li>
+	    			</ul>
+	    			<ol class="nav_index" style="z-index: 10;">
+			            <li class="current">1</li>
+			            <li>2</li>
+			            <li>3</li>
+			            <li>4</li>
+			            <li>5</li>
+			        </ol>
+	    		</div>
+	    		<div class="nav_right right">
+	    			<span><a href=""><img src="img/nav_r1.jpg" alt="" /></a></span>
+	    			<span><a href=""><img src="img/nav_r2.jpg" alt="" /></a></span>
+	    			<span><a href=""><img src="img/nav_r3.jpg" alt="" /></a></span>
+	    		</div>
+    		</div>
+    	</section>
+    </div>
+<!--content-->
+	<div class="contentwrap">
+	    <section>
+		    <div class="con_nav">
+			    <span class="cn_fir">整点抢</span>
+			    <span class="cn_sec">超便宜，绝对值!</span>
+			    <span class="cn_thi"><i>距离本场结束还有：</i><p></p>
+			    <p></p>
+			    <b>:</b>
+			    <p></p>
+			    <p></p>
+			    <b>:</b>
+			    <p></p>
+			    <p></p>
+			    </span>
+			    <span class="cn_for"><a href="">更多>></a></span>
+			
+		    </div>
+		    <div class="con_list">
+		    	<ul>
+		            <i></i>
+		    		<li class="show"><p>17:00</p><span>抢购进行中</span></li>
+		    		<li><p>00:00</p><span>即将开抢</span></li>
+		    		<li><p>09:00</p><span>即将开抢</span></li>
+		    		<li><p>13:00</p><span>即将开抢</span></li>
+		    		<li><p>15:00</p><span>即将开抢</span></li>
+		    	</ul>
+		    </div>
+		    <div class="main_top">
+		    	<div class="page right">
+		    		<a class="prev"> < </a>
+		    		<i>1</i>
+		    		<b>/4</b>
+		    		<a class="next"> > </a>
+		    	</div>
+		    	<div class="main_buy">
+		    		<ul class="buy1">
+		    		<!--<li>
+		    			
+		    			<span><img src="" alt="" /><span>	
+		    			<a></a>
+		    			<a></a>
+		    			</li>
+		    		-->
+		    		</ul>
+		    		<b class="con1"> < </b>
+		    		<b class="con2"> > </b>
+		    	</div>
+		    </div>
+		        <div class="banner">
+		        	<a href=""></a>
+		        	<a href=""></a>
+		        </div>
+		        <div class="con_nav sale_nav">
+		        <span class="cn_fir sale">天天特卖</span>
+			    <span class="cn_sec">每天上新，天天特惠，限时抢购！</span>
+			    <span class="cn_for"><a href="">更多>></a></span>
+		        </div>
+		        <div class="salewrap">
+		        	<section>
+		        		<ul class="sale_main">
+		        			<li>
+		        				<a><img src="img/sale1.jpg" alt="" /></a>
+		        				<span>
+		        					<i>雅漾品牌专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>5.9<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale2.jpg" alt="" /></a>
+		        				<span>
+		        					<i>乐高积木玩具专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>7.7<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale3.jpg" alt="" /></a>
+		        				<span>
+		        					<i>Childlife营养品专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>5.7<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale4.jpg" alt="" /></a>
+		        				<span>
+		        					<i>新西兰红印品牌专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>6.6<i>折起</i></p>
+		        			</li>
+		        		</ul>
+		        		<ul class="sale_main">
+		        			<li>
+		        				<a ><img src="img/sale5.jpg" alt="" /></a>
+		        				<span>
+		        					<i>头发护理专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>5.2<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a ><img src="img/sale6.jpg" alt="" /></a>
+		        				<span>
+		        					<i>韩国思亲肤品牌专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>7.2<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a ><img src="img/sale7.jpg" alt="" /></a>
+		        				<span>
+		        					<i>电动牙刷专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>7.2<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a ><img src="img/sale8.jpg" alt="" /></a>
+		        				<span>
+		        					<i>宝宝超爱的零食专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>5.9<i>折起</i></p>
+		        			</li>
+		        		</ul>
+		        		<ul class="sale_main">
+		        			<li>
+		        				<a><img src="img/sale9.jpg" alt="" /></a>
+		        				<span>
+		        					<i>新西兰品牌奶粉专场</i>
+		        					<b></b>
+		        				</span>
+		        				<p>5.9<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale10.jpg" alt="" /></a>
+		        				<span>
+		        					<i>阿弟葩鞋学步鞋特卖</i>
+		        					<b></b>
+		        				</span>
+		        				<p>3.5<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale11.jpg" alt="" /></a>
+		        				<span>
+		        					<i>甜蜜糖果</i>
+		        					<b></b>
+		        				</span>
+		        				<p>6.9<i>折起</i></p>
+		        			</li>
+		        			<li>
+		        				<a><img src="img/sale12.jpg" alt="" /></a>
+		        				<span>
+		        					<i>净水器</i>
+		        					<b></b>
+		        				</span>
+		        				<p>2.4<i>折起</i></p>
+		        			</li>
+		        		</ul>
+		        	</section>
+		        </div>
+		        <div class="like_nav">
+		        	<span class="cn_fir like">猜你喜欢</span>
+				    <span class="cn_sec">千万妈妈的共同选择，推荐给更多的妈妈</span>
+				    <span class="like_thi"><a href=""></a><i>填写即送</i><b>20</b>麦豆</span>
+				    <span class="cn_for likef">
+				    	<div class="page1">
+				    		<a class="p con"> < </a>
+				    		<i>1</i>
+				    		<b>/10</b>
+				    		<a class="n con"> > </a>
+				    	</div>
+				    </span>
+		        </div>
+		        <div class="likewrap">
+		        	<ul class="like_main">
+		        		<!--
+		        			<li>
+		        			<span><img /></span>
+		        		    <a href=""></a>
+		        		    <i></i><b><a><a></b>
+		        		    </li>
+		        		-->
+		        	</ul>
+		        	<b class="prev1"> < </b>
+		        	<b class="next1"> > </b>
+		        </div>
+	    </section>
+	</div>
+	<div class="floorwrap">
+		<section>
+			<div class="floor1">
+				<div class="f1_L left">
+					<img src="img/1f.jpg" alt="" />
+					<h1>宝宝奶粉</h1>
+					<span>
+						<a href="" class="blue">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="blue">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="blue">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor2">
+				<div class="f1_L left" id="f2">
+					<img src="img/2f.jpg" alt="" />
+					<h1>宝宝奶粉</h1>
+					<span>
+						<a href="" class="pink">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="pink">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="pink">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor3">
+				<div class="f1_L left" id="f3">
+					<img src="img/3f.jpg" alt="" />
+					<h1>宝宝奶粉</h1>
+					<span>
+						<a href="" class="green">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="green">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="green">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor4">
+				<div class="f1_L left" id="f4">
+					<img src="img/4f.jpg" alt="" />
+					<h1>宝宝奶粉</h1>
+					<span>
+						<a href="" class="blue">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="blue">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="blue">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor5">
+				<div class="f1_L left" id="f5">
+					<img src="img/5f.jpg" alt="" />
+					<h1>宝宝奶粉</h1>
+					<span>
+						<a href="" class="pink">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="pink">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="pink">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor6">
+				<div class="f1_L left" id="f6">
+					<img src="img/6f.jpg" alt="" />
+					<h1>宝宝玩具</h1>
+					<span>
+						<a href="" class="purple">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="purple">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="purple">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor7">
+				<div class="f1_L left" id="f7">
+					<img src="img/7f.jpg" alt="" />
+					<h1>孕产用品</h1>
+					<span>
+						<a href="" class="orange">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="orange">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="orange">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor8">
+				<div class="f1_L left" id="f8">
+					<img src="img/8f.jpg" alt="" />
+					<h1>化妆品</h1>
+					<span>
+						<a href="" class="paple">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="paple">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="paple">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="floor9">
+				<div class="f1_L left" id="f9">
+					<img src="img/9f.jpg" alt="" />
+					<h1>居家生活</h1>
+					<span>
+						<a href="" class="pur">牛奶粉</a>
+						<a href="">羊奶粉</a>
+						<a href="" class="pur">有机奶粉</a>
+						<a href="">早产儿奶粉</a>
+						<a href="">乳糖不耐受</a>
+						<a href="" class="pur">牛乳过敏</a>
+						<a href="">益生菌奶粉</a>
+						<a href="">0-6月</a>
+						<a href="">6-12月</a>
+						<a href="">1-2岁</a>
+						<a href="">2-3岁</a>
+						<a href="">3-6岁</a>
+						<a href="">儿童奶粉</a>
+					<h6 > 
+						<section>
+							<article class='aa'>							
+							<img src="img/m.jpg" alt="" />
+							<img src="img/m1.jpg" alt="" />
+							</article>
+						</section>
+					</h6>
+					</span>
+					<a  class="prev1"></a>
+					<a  class="next1"></a>
+				</div>
+				<div class="f1_S left">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="f1_R right">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			
+		<ul class="f_fix">
+			<li><a >宝宝奶粉</a></li>
+			<li><a >宝宝辅食</a></li>
+			<li><a >营养健康</a></li>
+			<li><a >宝宝用品</a></li>	
+			<li><a >宝宝服饰</a></li>	
+			<li><a >宝宝玩具</a></li>	
+			<li><a >孕产用品</a></li>	
+			<li><a >化妆品</a></li>	
+			<li><a >居家生活</a></li>	
+		</ul>
+		</section>
+	</div>
+<!--吸顶效果-->
+    <div class="flyheader_wrap">
+    	<div class="flyheader">
+    		<a  class="logo"></a>
+    		<form action="">
+    			<input type="text" name="" id="" placeholder="请输入商品名称，支持拼音搜索" />
+    			<input type="submit" name="" id="" value="搜索" />
+    		</form>
+    		<b>手机麦乐购</b>
+    	</div>
+    </div>
+    <div class="footerbg"></div>
+    <div class="footer"></div>
+	</body>
+</html>
+
+<script type="text/javascript" src="js/out.js"></script>
+<script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/time.js"></script>
+<script src="js/time2.js"></script>
+<script src="js/fenye.js"></script>
+<script src="js/fenye1.js"></script>
