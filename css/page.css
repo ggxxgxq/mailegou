@@ -1,0 +1,298 @@
+.navwrap{
+	height: 48px;
+	width:100%;
+	background: #fff;
+}
+.navwrap section{
+	width:1190px;
+	margin:0 auto;
+	height: 48px;
+	line-height: 48px;
+}
+.navwrap section a{
+	margin-left:10px ;
+	margin-right: 13px;
+	color: #666;
+}
+.navwrap section a:last-child{
+	color: #999;
+}
+.navwrap section a:last-child:hover{
+	color: #999;
+}
+.navwrap section a:hover{
+	color: #cb351a;
+}
+
+/*magnify_wrap*/
+.magnify_wrap section{
+	width: 1190px;
+	margin: 0 auto;
+	height:517px;
+}
+/*左侧*/
+/*放大镜*/
+.box{
+	width: 352px;
+	height: 424px;
+	
+	/*overflow: hidden;*/
+	position: relative;
+	margin-right: 26px;
+}
+.middle{
+	width: 350px;
+	height: 350px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin-bottom: 6px;
+	overflow: hidden;
+	position: relative;
+}
+.mask{
+	width: 175px;
+	height: 175px;
+	background:orange;
+	display: none;
+	position: absolute;
+	opacity: 0.3;
+	top:0;
+	left:0;
+	border: 1px solid #ccc;
+}
+.small{
+	width:330px;
+	height: 58px;
+	padding-left: 22px;
+	position: relative;	
+	margin-bottom: 14px;
+}
+.small i{
+	display: block;
+	width: 16px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	color: #999;
+	font-size: 20px;
+	border:1px solid #ccc;
+	position: absolute;
+	top:0;
+}
+.prev{
+  left:0;	
+}
+.next{
+   right:0;
+}
+.small li{
+	float: left;
+	width: 58px;
+	height: 58px;
+	margin-right: 5px;
+}
+.small img{
+	width: 54px;
+	height: 54px;
+	border: 1px solid #ccc;
+	
+}
+.small img:hover{
+	border:2px solid #ff6600 ;
+}
+.big{
+	width:400px ;
+	height:400px ;
+	overflow: hidden;
+	position: absolute;
+	background: #fff;
+	display: none;
+	z-index: 10;
+	top:0;
+	left:375px;
+}
+.big img{
+	position: absolute;
+	top:0;
+	left:0;
+}
+/*放大镜结束*/
+.collect{
+	width:352px ;
+	height: 65px;
+}
+.collect span{
+	display: block;
+	float: left;
+}
+.collect span:first-child{
+	display: block;
+	color: #a88675;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 20px;
+	background: url(../img/heart.png) no-repeat left -5px;
+}
+.collect span:last-child {
+	display: block;
+	height: 50px;
+	margin-top: 17px;
+	margin-bottom: 14px;
+	color: #d51d2f;	
+}
+.collect span a{
+	display: block;
+	background: url(../img/collect.png) no-repeat left center;
+	float: left;
+	width: 17px;
+	height: 17px;
+} 
+.collect span b{
+	display: block;
+	float: left;
+	background: url(../img/collect.png) no-repeat right center;
+	width: 20px;
+	height: 20px;
+}
+.collect span:last-child i{
+	display: block;
+	float: left;
+	margin-right: 33px;
+	
+}
+/*左侧结束*/
+.p_detail{
+	height: 503px;
+	margin-bottom: 14px;
+}
+.p_detail span:first-child{
+	font-size: 17px;
+	height: 31px;
+	line-height: 31px;
+}
+.p_detail>span>i{
+	font-size: 17px;
+	color: #ff0000;
+}
+.p_detail>p:nth-child(2){
+	color: #999;
+	margin-bottom: 20px;
+}
+.price{
+	width: 613px;
+	height: 60px;
+	background: #f7f7f7;
+	margin-bottom: 18px;
+}
+.price span{
+	display: block;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 9px;
+	letter-spacing: 7px;
+	
+}
+.price span i{
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #de2507;
+	font-weight: bolder;
+}
+.price span:last-child{
+	letter-spacing: 25px;
+}
+.price span:last-child b{
+	letter-spacing: 0;
+	margin-left: -20px;
+}
+.postage{
+	width:613px ;
+	height:62px;
+	line-height: 62px;
+	background: url(../img/post.jpg) no-repeat 20px 10px;
+	border:1px dashed #ccc;
+	margin-bottom: 20px;
+}
+.postage i{
+	color: #9f6ed2;
+	padding-left: 82px;
+	padding-right: 20px;	
+	border-right: 1px solid #9f6ed2;
+}
+.msg{
+	display: block;
+	margin-bottom: 19px;
+	padding-left: 12px;
+}
+.msg p{
+	margin-bottom: 12px;
+}
+/*.msg p:nth-child(3){
+	margin-bottom: 12px;
+}*/
+.msg>a{
+	display: block;
+	width: 180px;
+	height: 52px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	text-align: center;
+	line-height: 52px;
+	background: #cc1d00;
+	color: #fff;
+}
+.msg>b{
+	color: #666;
+}
+.sales{
+	height: 16px;
+}
+.sales i{
+	color: #999;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.sales i a{
+	color: #f00;
+}
+.sales i:first-child{
+    width: 109px;
+    text-align: left;
+}
+.sales i:nth-child(2){
+    width: 120px;
+    border-left:1px solid #999 ;
+    border-right:1px solid #999 ;
+    margin-right: 20px;
+}
+.attr{
+	letter-spacing: 23px;
+}
+.attr i{
+	letter-spacing: 0;
+	margin-left:-23px ;
+}
+.msg span {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+.msg span i{
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+.msg span a{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #666666;
+	border: 1px solid #ccc;
+}
+
