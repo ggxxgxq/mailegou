@@ -1,0 +1,135 @@
+/*bannerwrap*/
+.bannerwrap{
+	width: 100%;
+	height: 648px;
+	/*background: url(../img/nav2.jpg) no-repeat  center top;*/
+	
+}
+.loading a{
+	background: url(../img/loading.jpg) no-repeat ;
+	margin: auto;
+}
+.fir{
+	height: 106px;
+	background: url(../img/baby1.jpg) no-repeat center top;
+}
+.two{
+	height: 106px;
+	background: url(../img/baby2.jpg) no-repeat center top;
+}
+.thi{
+	height: 104px;
+	background: url(../img/baby3.jpg) no-repeat center top;
+}
+.for{
+	height: 110px;
+	background: url(../img/baby4.jpg) no-repeat center top;
+}
+.fiv{
+	height: 108px;
+	background: url(../img/baby5.jpg) no-repeat center top;
+}
+.six{
+	height: 128px;
+	background: url(../img/baby6.jpg) no-repeat center top;
+}
+/*mainwarap*/
+.mainwrap{
+	width: 100%;
+	height: 3339px;
+	background: #ff4652;
+	
+}
+.mainwrap section{
+	width: 1008px;
+	height: 3339px;
+	margin:0 auto;
+}
+.main{
+	width: 1008px;
+	height: 2792px;
+}
+.main li{
+	float: left;
+	width:239px;
+	height:336px;
+	background: #fff;
+	margin-right:13px ;
+	margin-bottom: 13px;
+	border-bottom: 13px;
+}
+.main li img{
+	width: 190px;
+	height: 190px;
+	margin:20px auto;
+	/*line-height: 239px;*/
+	float: none;
+}
+.main li>a:first-child{
+	display: block;
+	width: 239px;
+	height: 239px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.main li>a:nth-child(2){
+	display: block;
+	margin: 0 10px;
+	height: 30px;
+	margin-bottom: 32px;
+	text-indent: 6px;
+}
+
+
+.main li>span{
+	display: block;
+	margin: 0 10px;
+	overflow: hidden;
+}
+.main li span>i{
+	display: block;
+	float: left;
+	color:#f68806 ;
+	font-size: 18px;
+	/*padding-top: 7px;*/
+	font-weight: bold;
+	margin-right: 5px;
+}
+.main li span>i>b{
+	color:#f68806 ;
+	font-size: 12px;
+}
+.main li span>b{
+	display: block;
+	float: left;
+	padding-top: 3px;
+	color:#b5a1b5 ;
+}
+.main li span>b a{
+	text-decoration: line-through;
+}
+.main li>span>a{
+	display: block;
+	float: right;
+	background: #f68806;
+	color: #fff;
+	width: 68px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+
+
+
+
+/*fixed*/
+.r_fixed{
+	position: fixed;
+	/*overflow: hidden;*/
+	top:0;
+	right: 0;
+	z-index: 30;
+}
