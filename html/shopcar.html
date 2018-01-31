@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mailegou.css"/>
+		<link rel="stylesheet" href="../css/register.css" />	
+		<link rel="stylesheet" href="../css/shopcar.css" />	
+		<script src="../js/ajax.js"></script>
+		<script src="../js/cookie1.js"></script>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/shopcar.js"></script>
+	</head>
+	<body>
+		<div class="topwrap">
+			<section>
+				<div class="site_top">
+	    		<article>    			
+		    		<div class="ltop left">
+		    			<p class="left">
+		    				<span>
+		    					<a href="">
+		    					   <img src="img/top1.jpg" alt="" />
+		    						麦乐购首页
+		    					</a>
+		    				</span>
+		    				<span>请登录</span>
+		    				<span class="active"><a href="html/register.html">免费注册</a></span>
+		    			</p>
+		    			<p class="left login">
+		    				<span class="left">其他登录方式：</span>
+		    				<a href=""><img src="img/top2.jpg" alt="" /></a>
+		    				<a href=""><img src="img/top3.jpg" alt="" /></a>
+		    				<a href=""><img src="img/top4.jpg" alt="" /></a>
+		    				<a href=""><img class="last" src="img/top5.jpg" alt="" /></a>
+		    			</p>
+		    			<p class="left phone">
+		    				联系客服：400-666-6600
+		    			</p>
+		    		</div>
+		    		<div class="rtop right">
+		    			<span class="my">
+		    				<a href="" class="m_buy">我的麦乐购</a>
+		    				<ol class="m_list">
+		    					<li>我的麦乐购</li>
+		    					<li>我的订单</li>
+		    					<li>我的账户</li>
+		    					<li>麦豆兑换</li>
+		    					<li>我的优惠券</li>
+		    					<li>我的搜藏</li>
+		    				</ol>
+		    			</span>
+		    			<span class="save"><img src="img/top6.jpg" alt="" /><a href="">收藏麦乐购</a></span>
+		    			<span class="plan"><a href="">妈妈推广计划</a></span>
+		    			<span class="_phone"><img src="img/top7.jpg" alt="" /><a href="">手机麦乐购</a></span>
+		    		</div>
+	    		</article>
+	    </div>
+			</section>
+		</div>
+		<div class="nav_wrap">
+			<section>
+				<img class="left" src="../img/r_logo.gif" alt="" />
+				<ul class="left pro">
+					<li class="a"><p>1</p><i>我的购物车</i></li>
+					<li class="b"><p>2</p><i>订单确认</i></li>
+					<li class="c"><p>3</p><i>付款</i></li>
+					<li class="d"><p>4</p><i>购买完成</i></li>
+				</ul>
+			</section>
+		</div>
+		<div class="mainwrap">
+			<section>
+				<div class="shopcar">购物车</div>
+				<p><input type="checkbox" name="" id="" value=""  class="selectAll"/>全选</p>
+				<ul class="content">
+					<li class="shop_f">
+						<span class="sf"><input type="checkbox" name="" id="" value="" class="selectAll"/>由麦乐购韩国直邮仓发货<b>海外直邮</b></span>
+						<span class="ss">单价</span>
+						<span class="st">数量</span>
+						<span class="sfo">小计</span>
+						<span class="sfi">操作</span>
+					</li>
+					<li class="shop_s shop_f">
+						<p>包邮</p>
+						<p>已包邮</p>
+					</li>
+					<li class="shop_t">
+			<!--
+				<section>
+				<span class="sf">
+					<input type="checkbox" class="ck"/><img src="img/'+ ${arr[i].src} +'" alt="" / ><a>${arr[i].name}</a>
+				</span>
+				<span class="ss">
+					${arr[i].p2}
+				</span>
+            	<span class="st data-id=arr[i].id
+						data-price= arr[i].price  data-count= arr[i].count 
+						data-name= arr[i].name  data-src= arr[i].src "
+						>	
+            	</span>
+            	<span class="sfo">
+            		${arr[i].p2}
+            	</span>
+            	<span class="sfi">
+            		删除
+            	</span>
+            	</section>-->
+            	
+            
+					</li>
+				<li class="kong"></li>
+					<li class="shop_fi">
+						<ol class="left">
+							<li ><input type="checkbox" class="selectAll"/>全选</li>
+							<li class="cks">清空购物车</li>
+							<li>继续购物</li>
+							<li>获得麦豆：3</li>
+							<li class="count1"><i>1</i>件商品总计：</li>
+							<li class="price1">￥<i>69</i></li>
+						</ol>
+						<a href="" class="left ck1">去结算</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="footbox">
+			
+		</div>
+		<div class="copyright"></div>
+	</body>
+</html>
+<script type="text/javascript">
+$(".topwrap").load("public.html .site_top")	
+$(".footbox").load("public.html .footer")
+$(".copyright").load("public.html .copy")
+
+</script>

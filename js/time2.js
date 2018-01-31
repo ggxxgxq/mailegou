@@ -1,6 +1,6 @@
 //获取当前时间
 var start1 = new Date();
-var end1 = new Date("2018-1-27 17:00:00")
+var end1 = new Date("2018-2-8 17:00:00")
 var t1= diff(start1,end1);
 
 //时间显示

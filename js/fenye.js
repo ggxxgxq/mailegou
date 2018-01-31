@@ -7,7 +7,7 @@ function getData(){
 		var str="";
 		for(var i=(index2-1)*pageNum;i<index2*pageNum;i++){
 			str += `<li>
-						<span><img src="img/${arr[i].src}" alt="" /></span>
+						<a href=""><img src="img/${arr[i].src}" alt="" /></span>
 						<a>${arr[i].name}</a>
 						<a><img src="img/${arr[i].price}" alt="" /></a>						
 					</li>`;

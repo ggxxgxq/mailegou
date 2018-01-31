@@ -1,0 +1,49 @@
+.main .login{
+	height: 361px;
+}
+.title h3{
+	margin-right: 175px;	
+}
+.title i{
+	color: #9999a2;
+}
+.login input{
+	text-indent: 41px;
+	margin-bottom: 24px;
+}
+.phone1{
+	background: url(../img/login1.jpg) no-repeat top left;
+}
+.upwd1{
+	background: url(../img/login2.jpg) no-repeat top left;
+}
+.login .verify1{
+	text-indent: 8px;
+}
+.login>a{
+	display: block;
+	height: 22px;
+	margin-left: 240px;
+	/*float: right;*/
+}
+.login>input{
+	background: #e83917;
+	color: #fff;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	text-indent: 0;
+}
+.login>b{
+	display: block;
+	margin: 0 auto;
+	color: #9999a2;
+	line-height: 30px;
+}
+.login>b a{
+	display: inline-block;
+	background: url(../img/login3.jpg);
+	width: 146px;
+	height: 26px;
+}

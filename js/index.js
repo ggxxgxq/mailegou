@@ -1,10 +1,14 @@
+$(".contactwrap").load("html/public.html .footerwrap1")
+$(".copywrap").load("html/public.html .copy")
+//$(".fixwrap").load("html/public.html .r_fixed")
+$(".loading b").click(function(){
+	$(".loading").css("display","none")
+})
 /*nav_top*/
 	$(".my").mouseenter(function(){
-		$(".my a").css("display","none")
 		$(".my ol").css("display","block")
 	})
 	$(".my").mouseleave(function(){
-		$(".my a").css("display","block")
 		$(".my ol").css("display","none")
 	})
 	var nav_list = $(".p_nav span");
@@ -12,6 +16,7 @@
 		for(let i=0;i<nav_list.length;i++){
 			nav_list.eq(i).mouseenter(function(){
 				var n_left = nav_list.eq(i).position().left;
+				var w = nav_list.eq(i).width();
 				cont.animate({"left":n_left},800)
 			})
 			nav_list.eq(i).mouseleave(function(){
@@ -96,36 +101,93 @@ timer = setInterval(autoPlay,2000)
 			if( item != -1 ){
 				//根据index值设置  楼层号的高亮显示
 				$(".f_fix li").eq(item).find("a").css("display","block")
-				                       .siblings()
 				                       .end()
+				                       .find("b").css("display","none")
+				                       .end()
+				                       .siblings()
 				                       .find("a")
 				                       .css("display","none")
+				                       .end()
+				                       .find("b").css("display","block")
 				/*console.log(item)*/
 			}else{
 	
 				$(".f_fix li").find("a").css("display","none");
 			}
+	/*if(sTop>0){
+		$(".icon-top").click(function(){
+	        $("html,body").animate({"scrollTop":0},1500)
+        })
+	}*/
+	
  })
+ 
+  
+	$(".icon-top").click(function(){
+        $("html,body").animate({"scrollTop":0},1500)
+    })
+	 
 /*floor*/
-var timer1 = setInterval(Play,1500)
+var timer1 = setInterval(Play,1500)	
 function Play(){
-	$(".f1_L article").animate({"marginLeft":-90},1500,function(){
-				$(".f1_L article").css("margin-left",0)
-				       .find("img:first")
-				       .appendTo($(".f1_L article"))	
-	})
+		$(".floor1 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor2 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor3 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor4 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor5 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor6 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor7 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor8 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
+		$(".floor9 .aa").animate({"marginLeft":-90},1500,function(){
+					$(this).css("margin-left",0)
+					       .find("li:first")
+					       .appendTo($(this))	
+		})
 }
-$(".prev1").click(function(){
-			$(".f1_L article").animate({"marginLeft":-90},1500,function(){
-				$(".f1_L article").css("margin-left",0)
-				       .find("img:first")
-				       .appendTo($(".f1_L article"))	
+$(".next1").click(function(){
+			$(this).parent().find(".aa").animate({"marginLeft":-90},1500,function(){
+				$(this).css("margin-left",0)
+				       .find("li:first")
+				       .appendTo($(this))	
 		})
 	})
-	$(".next1").click(function(){		
-			$(".f1_L article img:last").prependTo( $(".f1_L article"));
-			$(".f1_L article").css("margin-left","-90px")
-			$(".f1_L article").animate({"marginLeft":0},1500,function(){
+	$(".prev1").click(function(){	
+		 var currUl=$(this).parent().find("ul")
+			currUl.find("li:last").prependTo( currUl );
+			currUl.css("margin-left","-90px")
+			currUl.animate({"marginLeft":0},1500,function(){
 		})
 	})
  $(".f1_L h6").mouseover(function(){
@@ -137,13 +199,34 @@ $(".prev1").click(function(){
  /*楼梯*/
 /*$(".floorwrap>section>div")*/
 $(".f_fix li").click(function(){
-    $div = $(".floorwrap>section>div")
-	var t = $(div).eq( $(this).index() ).offset().top;
+    var di = $(".floorwrap>section>div")
+	var t = $(di).eq( $(this).index() ).offset().top;
 	/*alert(t)*/
-	$("html,body").animate({"scrollTop":t},1500,function(){
+	$("html,body").animate({"scrollTop":t-60},1500,function(){
 		});
 }).mouseenter(function(){
+	$(this).find("b").css("display","none")
 	$(this).find("a").css("display","block")
 }).mouseleave(function(){
 	$(this).find("a").css("display","none")
+	$(this).find("b").css("display","block")
 })
+/*fixed*/
+$(".r_fixed>.iconfont").mouseenter(function(){
+    $(this).css("background","#ca3619")
+}).mouseleave(function(){
+    $(this).css("background","#444851")
+})
+$(".r_fixed p").mouseenter(function(){
+	$(".fix_img").animate({"right":36},1500)
+}).mouseleave(function(){
+	$(".fix_img").animate({"right":-236},1500)
+})
+$(".icon-bianji").mouseenter(function(){
+	$(".icon-bianji em").animate({"left":-80},1000)
+}).mouseleave(function(){
+	$(".icon-bianji em").animate({"left":0},1000)
+})
+
+
+
